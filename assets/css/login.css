@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Soviet';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Soviet'), url('/Wallet/assets/fonts/Soviet2.woff') format('woff');
+  }
+  
+
+@font-face {
+  font-family: 'Soviet 3D';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Soviet 3D'), url('/Wallet/assets/fonts/Soviet23D.woff') format('woff');
+  }
+
+body {
+    background-color: #800000;
+    color: #000000;
+    font-family:'Soviet';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .soviet {
+    font-family: 'soviet';
+    font-weight: normal;
+    font-size: 3.5em;
+    }
+
+  #login-container {
+    width: 300px;
+    background-image: url('/Wallet/assets/img/Our-Wallet-RedStar.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(255, 215, 0);
+    text-align: center;
+  }
+
+  #login-form input {
+    background-color: #FF00004b;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .login-form input::placeholder {
+   color: #000000; /* Cambia el color del marcador de posición */
+  font-weight: bold; /* Pone el texto del marcador de posición en negrita */
+  }
+
+  input::-webkit-input-placeholder {
+    color: #FFD700;
+  }
+  
+  #login-form button {
+    background-color: #FF0000;
+    color: #FFD700;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

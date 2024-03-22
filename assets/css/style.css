@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Soviet 3D';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Soviet 3D'), url('/Wallet/assets/fonts/Soviet2b.woff') format('woff');
+    }
+
+html {
+    font-family: Verdana, Tahoma, sans-serif; 
+    text-decoration-style: double; 
+    text-decoration-color: darkgoldenrod;
+    font-size: 20px; 
+}
+body {
+    background-color: #800000; 
+    color: #FFD700; 
+    font-family: 'Tahoma', sans-serif; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px; 
+}
+
+header {
+    background: rgba(95, 0, 0, 0); 
+    color: indigo;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 0 6rem;
+}
+
+header,
+footer {
+    box-shadow: 
+            inset 0px 3px 4px 6px rgba(255, 0, 0, 0.52); 
+    filter: drop-shadow(2px 4px 4px rgba(52, 52, 52, 0.52)) 
+            drop-shadow(2px 18px 4px rgba(0, 0, 255, 0.08));
+}
+
+.logo-title {
+    font-family: 'Soviet3D';
+    margin-top: 10px;
+}
+
+.container {
+    width: 80%; 
+    background: #8B0000; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px #FFD700; 
+    text-align: center; 
+}
+
+.list-group-item {
+    background-color: #9B111E; 
+    color: #FFD700; 
+    border: 1px solid #FFD700; 
+    padding: 10px;
+    margin-bottom: 5px; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.amount {
+  text-align: right; 
+}
+
+.form-group input {
+    background-color: #FF00004b;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: #0000002c;
+    font-weight: bold;
+}
+
+.form-group button {
+    background-color: #FF0000;
+    color: #FFD700;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.btn {
+    background-color: #FFD700; 
+    color: #800000; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #FFD700;
+    color: #800000;
+    padding: 10px 0;
+    text-align:start;
+    margin-bottom: 0px;
+}
+
+.nav-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    text-decoration: none;
+    background-color: #007bff; /* Color de fondo predeterminado */
+    background-size: cover; /* Asegura que la imagen de fondo cubra el botón */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+.button:nth-child(1) { background-image: url('/Wallet/assets/img/centralstar-ourwalletlogo.jpg'); }
+.button:nth-child(2) { background-image: url('/Wallet/assets/img/OUR-Wallet-brown.jpg'); }
+.button:nth-child(3) { background-image: url('/Wallet/assets/img/Our-Wallet-RedStar.jpg'); }
+.button:nth-child(4) { background-image: url('/Wallet/assets/img/topstar-ourwalletlogo.jpg'); }
+
+.navbar .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.navbar-logo img {
+    height: 50px;
+    margin: 5px 0;
+    padding-bottom: 20px;
+    width: 50px;
+    display: block;
+    position: relative;
+    left: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: circle;
+    background: rgb(255, 0, 0); 
+    margin: 9px 5px 11px 19px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid rgba(255, 0, 0, 0.52); 
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    background: rgba(255, 0, 0, 0.52); 
+    color: #FFD700;
+
+    @media screen and (max-width: 635px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer div {
+    background-color: #9B111E;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.form-group,
+.btn {
+    min-height: 38px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.transactions-table, .transactions-table th, .transactions-table td {
+    border: 1px solid #FFD700;
+    padding: 8px;
+    text-align: left;
+}
+
+.transactions-table th {
+    background-color: #9B111E;
+    color: #FFD700;
+}
+
+.transactions-table tr:nth-child(even) {
+    background-color: #AA3333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.contact-name {
+    font-weight: bold;
+}
