@@ -9,12 +9,13 @@ html {
     font-family: 'Soviet'; 
     text-decoration-style: double; 
     text-decoration-color: darkgoldenrod;
-    font-size: 20px; 
+    font-size: 1.5em; 
 }
 body {
     background-color: #800000; 
     color: #FFD700; 
     font-family: 'Verdana'; 
+    font-size: 1rem;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -22,6 +23,23 @@ body {
     height: 100vh;
     margin: 0;
     padding-top: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.5rem;
+    }
+    .navbar-text {
+        font-size: 0.5rem;
+    }
+    
 }
 
 header {
@@ -43,6 +61,7 @@ footer {
             inset 0px 3px 4px 6px rgba(255, 0, 0, 0.52); 
     filter: drop-shadow(2px 4px 4px rgba(52, 52, 52, 0.52)) 
             drop-shadow(2px 18px 4px rgba(0, 0, 255, 0.08));
+            
 }
 
 .logo-title {
@@ -69,6 +88,10 @@ footer {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 .amount {
@@ -110,10 +133,16 @@ footer {
     width: 100%;
     background-color: #FFD700;
     color: #800000;
-    padding: 10px 0;
-    text-align:start;
+    padding: 10px;
+    text-align:initial;
     margin-bottom: 0px;
-}
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    align-items: center; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
 .nav-table {
     display: grid;
@@ -122,7 +151,7 @@ footer {
 }
 
 .button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -132,13 +161,31 @@ footer {
     color: #FFD700;
     font-weight: bolder;
     font-size: 0.67rem;
-    padding: 20px;
-    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    background-color: #007bff; /* Color de fondo predeterminado */
+    transition: background-color 0.3s;
+    height: 50px;
+    overflow: hidden;
+    background-color: #ff0000; /* Color de fondo predeterminado */
     background-size: cover; /* Asegura que la imagen de fondo cubra el botón */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+.button > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron p {
+    display: flex;
+    align-items: center; /* Alinea los elementos hijos verticalmente */
+    justify-content: center; /* Alinea los elementos hijos hacia el inicio del contenedor */
+    font-size: 1em; /* Ajusta según tus necesidades */
+    line-height: 1.5; /* Asegura un espaciado adecuado para múltiples tamaños de fuente */
 }
 
 .button:nth-child(1) { background-image: url('/Wallet/assets/img/centralstar-ourwalletlogo.jpg'); }
@@ -162,6 +209,10 @@ footer {
     position: relative;
     left: 10px;
 }
+
+.navbar-text {
+    font-size: 1.5rem; /* Tamaño de texto por defecto */
+  }
 
 nav ul {
     display: flex;
@@ -249,4 +300,5 @@ footer div {
     color: #FFD700;
     font-weight: bolder;
     font-size: 2em;
+    margin-bottom: -0.1em;
 }
