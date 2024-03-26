@@ -244,6 +244,15 @@ footer {
     }
 }
 
+.footer-container p {
+    display: flex;
+    align-items: center; /* Asegura la alineación vertical */
+    justify-content: center; /* Centra el contenido si es necesario */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin: 0 auto; /* Elimina los márgenes por defecto de <p> y centra */
+    height: auto; /* Opcional: asegura que <p> ocupe todo el espacio disponible en su contenedor */
+}
+
 footer div {
     background-color: #9B111E;
     color: #FFD700;
